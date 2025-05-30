@@ -16,8 +16,8 @@ This project provides a simple command-line tool to transcribe audio files to te
 ## Installation
 1. Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/yourrepo.git
-   cd yourrepo
+   git clone https://github.com/ibrahimbtaz/whisper-locally-with-torch
+   cd whisper-locally-with-torch
    ```
 2. Install dependencies:
    ```sh
@@ -37,6 +37,35 @@ python whisperku.py "path/to/your/audio.mp3"
 python whisperku.py
 ```
 Then enter the path to your audio file when prompted.
+
+### 3. Run directly with a .bat file (Windows)
+If you want to run `whisperku` directly like in the screenshot, you can create a `whisperku.bat` file in the same folder with the following content:
+
+```bat
+@echo off
+python whisperku.py %*
+```
+
+Now you can use the command below in your terminal (cmd):
+```sh
+whisperku "path/to/your/audio.mp3"
+```
+Or just type `whisperku` and input the path manually when prompted.
+
+### 4. (Optional) Add to Windows PATH
+To run `whisperku` from any folder in Command Prompt, add the script folder to your Windows `PATH`:
+
+1. Copy the folder path where `whisperku.bat` is located (e.g., `C:\Users\yourname\path-to-your-whisper-locally-with-torch`).
+2. Open **Control Panel** → **System** → **Advanced system settings** → **Environment Variables**.
+3. In the "System variables" section, find and select `Path`, then click **Edit**.
+4. Click **New**, paste your folder path, and click **OK**.
+5. Restart your Command Prompt.
+
+Now you can run:
+```sh
+whisperku "path/to/your/audio.mp3"
+```
+from any directory!
 
 ## Output
 - The script will print the transcription result to the terminal.
