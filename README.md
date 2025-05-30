@@ -94,17 +94,4 @@ from any directory!
 - For best results, use clear, undamaged audio files.
 - You can change the Whisper model by editing the `model_name` variable in the script.
 
----
-
-**Made with ❤️ using [OpenAI Whisper](https://github.com/openai/whisper)**
-
----
-
-## Example Output
-
-Below is a screenshot of the script in action on Windows:
-
-![Whisperku Example Output](screenshot.png)
-
-The script shows device info, model loading, real-time progress, and prints the transcription result with timestamps. 
 
