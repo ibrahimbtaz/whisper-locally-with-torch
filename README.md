@@ -2,6 +2,18 @@
 
 This project provides a simple command-line tool to transcribe audio files to text using OpenAI's Whisper model.
 
+**Made with ❤️ using [OpenAI Whisper](https://github.com/openai/whisper)**
+
+---
+
+## Example Output
+
+Below is a screenshot of the script in action on Windows:
+
+![Whisperku Example Output](screenshot.png)
+
+The script shows device info, model loading, real-time progress, and prints the transcription result with timestamps. 
+
 ## Features
 - Supports audio formats: mp3, wav, m4a, flac, ogg
 - Automatic device selection (CUDA if available, otherwise CPU)
@@ -13,6 +25,9 @@ This project provides a simple command-line tool to transcribe audio files to te
 - [OpenAI Whisper](https://github.com/openai/whisper)
 - [PyTorch](https://pytorch.org/)
 
+> **Note:**
+> If you want to use GPU acceleration (CUDA), make sure you have installed the [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) and the appropriate PyTorch version with CUDA support. See [PyTorch Get Started](https://pytorch.org/get-started/locally/) for the correct installation command for your system.
+
 ## Installation
 1. Clone this repository:
    ```sh
@@ -22,6 +37,10 @@ This project provides a simple command-line tool to transcribe audio files to te
 2. Install dependencies:
    ```sh
    pip install torch whisper
+   ```
+   - If you want to use CUDA (GPU), follow the [PyTorch installation guide](https://pytorch.org/get-started/locally/) to install the correct version for your CUDA toolkit. Example for CUDA 12.1:
+   ```sh
+   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
    ```
 
 ## Usage
@@ -43,7 +62,7 @@ If you want to run `whisperku` directly like in the screenshot, you can create a
 
 ```bat
 @echo off
-python whisperku.py %*
+python path-to-your-whisperku.py %*
 ```
 
 Now you can use the command below in your terminal (cmd):
@@ -77,4 +96,15 @@ from any directory!
 
 ---
 
-**Made with ❤️ using [OpenAI Whisper](https://github.com/openai/whisper)** 
+**Made with ❤️ using [OpenAI Whisper](https://github.com/openai/whisper)**
+
+---
+
+## Example Output
+
+Below is a screenshot of the script in action on Windows:
+
+![Whisperku Example Output](screenshot.png)
+
+The script shows device info, model loading, real-time progress, and prints the transcription result with timestamps. 
+
